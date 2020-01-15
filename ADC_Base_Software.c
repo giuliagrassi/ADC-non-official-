@@ -1,3 +1,4 @@
+//adicionei esse comentario
 /* -------------------------------------------------------------------------------------------------------------------- */
 // F28335 - Base Project
 /* -------------------------------------------------------------------------------------------------------------------- */
@@ -195,8 +196,8 @@ void main(void)
     InitAdc();
 
     // Specific ADC setup for this example:
-    AdcRegs.ADCTRL1.bit.ACQ_PS = ADC_SHCLK;   //Tamanho da janela de aquisição --> 0xf
-    AdcRegs.ADCTRL3.bit.ADCCLKPS = ADC_CKPS;  //Divisor do relógio principal --> freq = 37.5MHz
+    AdcRegs.ADCTRL1.bit.ACQ_PS = ADC_SHCLK;   //Tamanho da janela de aquisiÃ§Ã£o --> 0xf
+    AdcRegs.ADCTRL3.bit.ADCCLKPS = ADC_CKPS;  //Divisor do relÃ³gio principal --> freq = 37.5MHz
     AdcRegs.ADCMAXCONV.all = 0x0101;          // Setup 6 conv's
     AdcRegs.ADCCHSELSEQ1.bit.CONV00 = 0x0;    // Setup ADCINA0 as 1st SEQ1 conv.
     AdcRegs.ADCCHSELSEQ1.bit.CONV01 = 0x1;    // Setup ADCINA1 as 2nd SEQ1 conv.
